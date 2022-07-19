@@ -1,0 +1,196 @@
+@font-face {
+  font-family: 'gotham-regular';
+  src: url(/fonts/Gotham-Thin.otf); }
+
+@font-face {
+  font-family: 'gotham-medium';
+  src: url(/fonts/GothamMedium.ttf); }
+
+@font-face {
+  font-family: 'brogrammers';
+  src: url(/fonts/Jacksilver.otf); }
+
+@font-face {
+  font-family: 'Gacor';
+  src: url(/fonts/Gacor.otf); }
+
+h1 {
+  font-size: 2.6rem; }
+
+h2 {
+  font-size: 4.8rem; }
+
+h3 {
+  font-size: 3rem;
+  font-weight: normal; }
+
+h4, h5 {
+  font-size: 2.8rem; }
+
+li, button, label, input, p {
+  font-size: 2rem; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'gotham-regular',sans-serif; }
+
+.main-header {
+  background-color: white;
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.2); }
+
+.nav {
+  display: flex;
+  padding: 1.5rem;
+  min-height: 2vh;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  align-items: center; }
+  .nav #logo {
+    flex: 2 1 40rem;
+    font-family: 'brogrammers',sans-serif;
+    color: #405f7b;
+    letter-spacing: 2px; }
+  .nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'gotham-medium',sans-serif; }
+    .nav ul li {
+      list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #5c5d5e; }
+
+.btn-yellow {
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 100px;
+  width: 100px;
+  background-color: #fbad32;
+  transition: all 0.2s; }
+  .btn-yellow a {
+    color: white; }
+  .btn-yellow:hover {
+    transform: translateY(-3px);
+    background-color: #fba51e;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+  .btn-yellow:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+.btn-white {
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 100px;
+  width: 100px;
+  background-color: white;
+  transition: all 0.2s; }
+  .btn-white a {
+    color: #5c5d5e; }
+  .btn-white:hover {
+    transform: translateY(-3px);
+    background-color: whitesmoke;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+  .btn-white:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+.btn-white-about {
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 100px;
+  width: 120px;
+  background-color: white;
+  transition: all 0.2s; }
+  .btn-white-about a {
+    color: #5c5d5e; }
+  .btn-white-about:hover {
+    transform: translateY(-3px);
+    background-color: whitesmoke;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+  .btn-white-about:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+.sub-header nav {
+  min-height: 0.6vh;
+  padding: 0.2rem; }
+  .sub-header nav ul {
+    font-family: 'gotham-regular',sans-serif;
+    font-weight: bold; }
+
+.btn-white-sub-header {
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  width: 250px;
+  transition: all 0.2s; }
+  .btn-white-sub-header a {
+    color: #5c5d5e; }
+  .btn-white-sub-header:hover a {
+    color: #fbad32; }
+  .btn-white-sub-header:active a {
+    color: #f59805; }
+
+.hero {
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.978326) 0%, rgba(0, 0, 0, 0.628186) 50%, rgba(0, 0, 0, 0) 100%), url(/images/caught-in-joy-ptVBlniJi50-unsplash.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: top;
+  color: white;
+  flex-direction: column; }
+
+.text-box {
+  width: 90%;
+  margin: auto; }
+
+.hero .text-box .primary-heading {
+  font-family: 'gacor',sans-serif;
+  font-size: 4.6rem;
+  letter-spacing: 1rem;
+  padding: 10rem 0 1rem 0; }
+
+.hero .text-box .sub-heading {
+  font-family: 'gotham-regular',sans-serif;
+  font-size: 3.6rem; }
+
+.hero .search-box {
+  width: 90%;
+  margin: auto;
+  padding: 2rem 0; }
+  .hero .search-box .search-bar {
+    display: flex; }
+    .hero .search-box .search-bar input {
+      max-width: 60rem;
+      max-height: 4rem;
+      flex: 1;
+      border: 0;
+      outline: none;
+      padding: 2.4rem 2.0rem;
+      font-size: 2rem; }
+    .hero .search-box .search-bar button {
+      border: 0;
+      max-height: 40rem;
+      width: 5rem;
+      background-color: #fbad32;
+      cursor: pointer; }
+      .hero .search-box .search-bar button img {
+        width: 3rem; }
+      .hero .search-box .search-bar button:hover {
+        background-color: #fba51e;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+      .hero .search-box .search-bar button:active {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
