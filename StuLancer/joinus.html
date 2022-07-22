@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    body{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(wallpaperflare.com_wallpaper.jpg); 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    size: inherit;
+    }
+    .signup-box
+    {
+    width: 400px;
+    height: 620px;
+    margin: auto;
+    margin-top: 0px;
+    background-color:white;
+    border-radius: 3px;
+    }
+    h1{ font-family: cursive;
+     text-align: center;
+     padding-top: 15px;
+    }
+    h4{
+        text-align: center;
+    }
+    form
+    {
+    width: 300px;
+    margin-left: 20px;
+    }
+    form label{
+        display: inline-flex;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    form input{
+        width: 100%;
+        padding: 8px;
+        border: none;
+        border: 1px solid gray;
+        border-radius: 6px;
+        outline: none;
+    }
+    input[type="button"]{
+    width: 320px;
+    height: 35px;
+    margin-top: 20px;
+    border:none;
+    background-color: rgb(247, 220, 15);
+    color: mintcream;
+    font-size: 15px;
+    cursor: pointer;
+    }
+    p{
+        text-align: center;
+        padding-top: 20px;
+        font-size: 40px;
+    }
+    .para-2
+    {
+        text-align: center;
+        color:yellow;
+        font-size: 15px;
+        margin-top: -10px;
+    }
+    .para-2 a{
+        color: yellow;
+    }
+    ul{ 
+        display: inline;
+        margin: 400px;
+        position: relative;
+    }
+    
+    button{
+        text-emphasis-color: yellow;
+        width: 150px;
+        margin: 10px;
+        border-radius: 25px;
+        background: transparent;
+        padding: 1px;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    } 
+    span{
+        background:yellow;
+        height: 100%;
+        width: 0%;
+        border-radius: 25px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: 0.5s;
+    }
+    button:hover span{
+        width: 100%;
+    }
+    button:hover{
+        border:none;
+    }
+    </style>
+    
+</head>
+<body>
+    <div>
+        <img src="" class="logo">
+    <ul>
+       <button type="button"><span></span>HOME</button>
+       <button type="button"><span></span>HELP</button> 
+       <button type="button"><span></span>FAQ</button>
+       <button type="button"><span></span>CATEGORIES</button>
+<div>
+    <div class="signup-box">
+        <h1>Sign up</h1>
+        <h4>Join Us and access a pool of professional services</h4>
+        <form>
+            <label> First Name</label>
+            <input type="text" placeholder="">
+            <label> Last Name</label>
+            <input type="text" placeholder="">
+             <label> Email</label>
+            <input type="email" placeholder=""> 
+            <label> Password</label>
+            <input type="password" placeholder="">
+            <label>Confirm Password</label>
+            <input type="text" placeholder="">
+            <input type="button" value="Sign Up">
+        </form>
+    </div>
+    <p class="para-2">Already a Stulancer?<a href="h">Login here</a></p>
+</body>
+</html>
