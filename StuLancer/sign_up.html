@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Us</title>
+    <link rel="stylesheet" href="/css/join_us_css.css" />
+  </head>
+  <body>
+    <div class="supercontainer">
+      <form action="">
+        <div class="container">
+          <h2 class="header">Join StuLancer !</h2>
+          <h3 class="mission" style="font-weight: lighter; font-style: italic">
+            What's your mission?
+          </h3>
+
+          <!-- Account type -->
+          <input type="radio" name="account" id="radioOne" class="radio" />
+          <label for="radioOne" id="radio"
+            >I WANT TO <br /><strong> HIRE A STULANCER</strong></label
+          >
+
+          <input type="radio" name="account" id="radioTwo" class="radio" />
+          <label for="radioTwo" id="radio"
+            >I WANT TO <br />
+            <strong>BE A STULANCER</strong></label
+          >
+
+          <!-- User Name -->
+          <input type="text" placeholder="First name" id="firstname" required />
+          <input type="text" placeholder="Last name" required />
+
+          <!-- User Email -->
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter email"
+            id=""
+            required
+          />
+          <br /><br />
+
+          <!-- User Password -->
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter password"
+            required
+            id=""
+          />
+          <input
+            type="password"
+            name="password_confirm"
+            id=""
+            placeholder="Confirm password"
+            required
+          />
+
+          <!-- Remember User -->
+          <label>
+            <input
+              type="checkbox"
+              name="remember"
+              checked="checked"
+              id=""
+            />Remember me
+          </label>
+
+          <!-- Accept -->
+          <p>
+            By creating an account you agree to our
+            <a href="#" style="color: orange">Terms & Conditions</a>
+          </p>
+        </div>
+        <div class="clearfix">
+          <button type="submit">Sign Up</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

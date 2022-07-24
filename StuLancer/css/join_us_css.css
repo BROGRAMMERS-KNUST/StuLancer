@@ -1,0 +1,43 @@
+html{
+    background-image: url('/images/caught-in-joy-ptVBlniJi50-unsplash.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.supercontainer{
+    margin: 1.5% 30%;
+    background-color: white;
+    border-radius: 20px;
+    border: solid rgba(0,0,0,0.05);
+    border-style: groove;
+}
+.header{
+    text-align: center;
+}
+input[type=radio]{
+    visibility: visible;
+}
+form{
+    padding: 5%;
+}
+#radio{
+    color: rgba(234, 143, 7);
+    width: 40%;
+    height: 100%;
+    padding-left: 0%;
+    display: inline-block;
+    border: solid rgba(234, 143, 7, 0.5);
+    cursor: pointer;
+    border-radius: 20px;
+    border-width: 3px;
+    text-align: center;
+    font-size: larger;
+    line-height: 2em;
+    padding-top: 1%;
+}
+
+
+input[type=text],
+input[type=password]{
+    width: 200px;
+    height: 20px;
+}
