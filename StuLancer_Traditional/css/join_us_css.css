@@ -1,29 +1,36 @@
-html{
-    background-image: url('/images/caught-in-joy-ptVBlniJi50-unsplash.jpg');
+html {
+    background-image: url('/StuLancer_Traditional/images/caught-in-joy-ptVBlniJi50-unsplash.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
-.supercontainer{
-    margin: 1.5% 30%;
+
+.supercontainer {
+    margin: 1rem 30%;
+    width: 550px;
     background-color: white;
     border-radius: 20px;
-    border: solid rgba(0,0,0,0.05);
+    border: rgba(234, 143, 7, 0.7);
     border-style: groove;
+    margin-bottom: 1.5%;
 }
-.header{
+
+.header {
     text-align: center;
 }
-input[type=radio]{
+
+input[type=radio] {
     visibility: visible;
 }
-form{
+
+form {
     padding: 5%;
 }
-#radio{
+
+#radio {
     color: rgba(234, 143, 7);
+    margin: 4%;
     width: 40%;
     height: 100%;
-    padding-left: 0%;
     display: inline-block;
     border: solid rgba(234, 143, 7, 0.5);
     cursor: pointer;
@@ -33,11 +40,60 @@ form{
     font-size: larger;
     line-height: 2em;
     padding-top: 1%;
+    transition: all 1.5s ease-out;
+    margin-top: 1%;
+
 }
 
+#radio::first-line {
+    font-size: large;
+}
 
-input[type=text],
-input[type=password]{
-    width: 200px;
-    height: 20px;
+#radio:hover {
+    background-color: rgba(234, 143, 7, 0.7);
+    color: grey;
+    box-shadow: 0px 5px 5px grey;
+}
+
+input[type=text] {
+    width: 40%;
+    height: 2rem;
+    border-radius: 7px;
+    padding-right: 0px;
+    border: solid rgba(234, 143, 7, 0.8);
+    border-width: 2px;
+    font-size: 1.1rem;
+
+}
+
+input[type=password],
+input[type=email] {
+    width: 85%;
+    height: 2rem;
+    font-size: 1.1rem;
+    margin-top: 3%;
+    border-radius: 7px;
+    border: solid rgba(234, 143, 7, 0.8);
+    border-width: 2px;
+}
+
+button {
+    color: white;
+    background-color: rgba(234, 143, 7, 0.7);
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+    position: relative;
+    box-shadow: 0px 10px 10px grey;
+    transition: all 1s;
+
+}
+
+button:hover {
+    top: 2px;
+    transform: translateY(2px);
+    box-shadow: 0px 10px 10px grey;
+    color: grey;
+    cursor: pointer;
 }

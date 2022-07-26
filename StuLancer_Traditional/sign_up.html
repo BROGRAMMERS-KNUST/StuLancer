@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Join Us</title>
-    <link rel="stylesheet" href="./css/join_us_css.css" />
+    <link rel="stylesheet" href="/StuLancer_Traditional/css/join_us_css.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div class="supercontainer">
@@ -17,22 +18,42 @@
           </h3>
 
           <!-- Account type -->
-          <input type="radio" name="account" id="radioOne" class="radio" />
+          <input
+            type="radio"
+            name="account"
+            id="radioOne"
+            class="radio"
+            hidden
+          />
           <label for="radioOne" id="radio"
             >I WANT TO <br /><strong> HIRE A STULANCER</strong></label
           >
 
-          <input type="radio" name="account" id="radioTwo" class="radio" />
+          <input
+            type="radio"
+            name="account"
+            id="radioTwo"
+            class="radio"
+            hidden
+          />
           <label for="radioTwo" id="radio"
             >I WANT TO <br />
             <strong>BE A STULANCER</strong></label
-          >
+          ><br />
 
           <!-- User Name -->
-          <input type="text" placeholder="First name" id="firstname" required />
-          <input type="text" placeholder="Last name" required />
+          <label for="text"><i class="fas fa-user"></i>
+            <input
+              type="text"
+              placeholder="First name"
+              id="firstname"
+              required
+            />
+            <input type="text" placeholder="Last name" required style="margin-left: 4%;" /><br />
+            </label>
 
           <!-- User Email -->
+          <label for="email"><i class="fa-solid fa-envelope"></i></label>
           <input
             type="email"
             name="email"
@@ -40,9 +61,10 @@
             id=""
             required
           />
-          <br /><br />
+          <br />
 
           <!-- User Password -->
+          <label for="password"><i class="fa-solid fa-unlock"></i></label>
           <input
             type="password"
             name="password"
@@ -50,33 +72,34 @@
             required
             id=""
           />
+          <br>
+          <label for="password"><i class="fa-solid fa-lock"></i></label>
           <input
             type="password"
             name="password_confirm"
             id=""
             placeholder="Confirm password"
             required
+            style="margin-bottom: 5%"
           />
 
           <!-- Remember User -->
-          <label>
-            <input
-              type="checkbox"
-              name="remember"
-              checked="checked"
-              id=""
-            />Remember me
-          </label>
+          <br />
+          <center>
+            <label>
+              <input type="checkbox" style="accent-color: orange;" name="remember" checked="checked" id="" />
+              Remember me
+            </label>
+          </center>
 
           <!-- Accept -->
           <p>
-            By creating an account you agree to our
-            <a href="#" style="color: orange">Terms & Conditions</a>
+            <center>
+              By creating an account you agree to our
+              <a href="#" style="color: orange">Terms & Conditions</a>
+            </center>
           </p>
-        </div>
-        <div class="clearfix">
-          <button type="submit">Sign Up</button>
-        </div>
+          <center><button type="submit">Sign Up</button></center>
       </form>
     </div>
   </body>
